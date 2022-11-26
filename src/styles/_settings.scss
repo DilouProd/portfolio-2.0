@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+$font-1: "Nunito", sans-serif;
+
+$color-blue-dark: #070d59;
+$color-blue: #1f3c88;
+$color-blue-light: #5893d4;
+$color-blue-lighter: #ceddef;
+$black: #000;
+$white: #fff;
+
+$borderRadius: 25px;
+$shadow: 0 1px 3px #333;
+$minHeight: 95vh;
+
+@mixin verticalCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 1rem auto;
+  max-width: 1200px;
+  font-family: $font-1;
+  color: $black;
+}
+button {
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $black;
+  cursor: pointer;
+}
+a:visited {
+  color: $black;
+}
+.home,
+.knowledges,
+.portfolio,
+.contact {
+  display: flex;
+  height: $minHeight;
+
+  @media screen and (max-width: 768px) {
+    display: block !important;
+  }
+}
+
+.homeContent,
+.knowledgesContent,
+.portfolioContent,
+.contactContent {
+  margin-left: 0.4rem;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 0 !important;
+  }
+}

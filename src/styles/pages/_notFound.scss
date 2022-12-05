@@ -2,23 +2,23 @@
   @include verticalCenter;
   height: 95vh;
   max-width: 1200px;
-  background: $color-blue-dark;
+  background: $color-1;
   border-radius: $borderRadius;
   text-align: center;
 
   h3 {
-    color: $color-blue-lighter;
+    color: $color-4;
     margin-bottom: 3rem;
     font-size: 2rem;
   }
   a {
     padding: 1rem 2rem;
     border-radius: $borderRadius;
-    background: $color-blue-lighter;
+    background: $color-4;
     transition: 0.2s;
 
     &:hover {
-      background: $color-blue-light;
+      background: $color-3;
     }
   }
 }

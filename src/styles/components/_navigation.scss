@@ -1,5 +1,5 @@
 .sidebar {
-  background: $color-blue-dark;
+  background: $color-1;
   font-family: $font-1;
   height: 100%;
   min-height: $minHeight;
@@ -29,15 +29,15 @@
       img {
         width: 150px;
         border-radius: 50%;
-        box-shadow: 0 0 0 4px $color-blue-light, 0 0 0 8px $color-blue-lighter,
-          0 0 0 12px $color-blue-light;
+        box-shadow: 0 0 0 4px $color-3, 0 0 0 8px $color-4,
+          0 0 0 12px $color-3;
       }
       h3 {
         font-size: 1.3rem;
         text-transform: uppercase;
         letter-spacing: 0.2rem;
         margin-top: 1.5rem;
-        color: $color-blue-light;
+        color: $color-3;
       }
     }
   }
@@ -58,10 +58,13 @@
           transform: translate(3px, 3px);
         }
         a {
-          color: $color-blue-light;
+          color: $color-3;
           &:hover {
-            color: $color-blue-lighter;
+            color: $color-4;
           }
+        }
+        .active{
+          color: $color-4;
         }
         i {
           position: absolute;
@@ -86,18 +89,20 @@
 
       li {
         font-size: 1.5rem;
-        background: $color-blue-light;
+        background: $color-3;
         border-radius: 50%;
-        color: $color-blue;
         padding: 0.5rem 0.8rem;
         transition: 0.3s;
         cursor: pointer;
 
         a:visited {
-          color: $color-blue;
+          color: $color-2;
         }
         &:hover {
-          background: $color-blue-lighter;
+          background: $color-4;
+        } 
+        i{
+          color: $color-2;
         }
       }
     }
@@ -109,10 +114,10 @@
     font-size: 0.7rem;
 
     p {
-      color: $color-blue-light;
+      color: $color-3;
 
       &:hover {
-        color: $color-blue-lighter;
+        color: $color-4;
       }
     }
   }

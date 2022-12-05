@@ -14,9 +14,9 @@ const Navigation = () => {
             <div className="navigation">
                 <ul>
                     <li>
-                    <NavLink exact to="/">
+                    <NavLink exact="true" activeClassName="active" to="/">
                         <i className='fas fa-home'></i>
-                        <span>Acceuil</span>
+                        <span>Accueil</span>
                     </NavLink>
                     </li>
                     <li>
@@ -28,7 +28,7 @@ const Navigation = () => {
                     <li>
                     <NavLink exact to="/portfolio" >
                         <i className='fas fa-images'></i>
-                        <span>Projects</span>
+                        <span>Projets</span>
                     </NavLink>
                     </li>
                     <li>

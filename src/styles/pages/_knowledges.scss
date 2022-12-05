@@ -6,7 +6,7 @@
     overflow: hidden;
     display: grid;
     grid-template-columns: 38% 1fr 1fr;
-    grid-template-rows: 70% 30%;
+    grid-template-rows: 73% 27%;
     grid-template-areas:
       "L E E"
       "O O H";
@@ -15,7 +15,7 @@
     .experience,
     .otherSkills,
     .hobbies {
-      background: $color-blue;
+      background: $color-1;
       border-radius: $borderRadius;
       padding: 1.4rem;
     }
@@ -23,7 +23,7 @@
       font-size: 1.4rem;
       margin-bottom: 1rem;
       font-family: $font-1;
-      color: $color-blue-light;
+      color: $color-3;
       text-transform: uppercase;
     }
     .languagesFrameworks {
@@ -75,7 +75,7 @@
         padding-top: 0.5rem;
 
         li {
-          color: $color-blue-dark;
+          color: $color-4;
         }
         .progressBar {
           height: 0.4rem;
@@ -87,7 +87,7 @@
           &:after {
             content: "";
             position: absolute;
-            background: $color-blue-light;
+            background: $color-3;
             border-radius: 50px;
             height: 0.4rem;
             width: 0;
@@ -118,15 +118,20 @@
       }
       h4 {
         font-size: 1.1rem;
-        color: $color-blue-lighter;
+        color: $color-4;
       }
       h5 {
-        color: $color-blue-light;
+        color: $color-3;
         padding: 0.5rem 0 0.5rem 1rem;
       }
       p {
         text-align: justify;
         padding: 0 1rem;
+        ul{
+          li {
+            list-style: disc;
+          }
+        }
       }
       .exp-1 {
         grid-area: 2;
@@ -151,7 +156,7 @@
           display: grid;
 
           i {
-            color: $color-blue-lighter;
+            color: $color-4;
           }
         }
       }
@@ -167,7 +172,7 @@
         li {
           i {
             position: absolute;
-            color: $color-blue-lighter;
+            color: $color-4;
           }
           span {
             position: absolute;

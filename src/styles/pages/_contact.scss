@@ -23,7 +23,8 @@
       width: 100%;
       height: 100%;
       position: absolute;
-      background: url(../../media/map.jpg) no-repeat center top/cover;
+      background: url("../../../public/media/map.jpg") no-repeat center
+        top/cover;
       filter: grayscale(100%);
     }
     &:after {
@@ -32,7 +33,8 @@
       height: 100%;
       position: absolute;
       top: 30px;
-      background: url(../../media/shape.svg) no-repeat center / cover;
+      background: url("../../../public/media/shape.svg") no-repeat center /
+        cover;
     }
   }
   .contactBox {

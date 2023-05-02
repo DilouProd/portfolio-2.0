@@ -125,6 +125,7 @@
         padding: 0.5rem 0 0.5rem 1rem;
       }
       p {
+        color: white;
         text-align: justify;
         padding: 0 1rem;
         ul{
@@ -154,9 +155,11 @@
         ul {
           height: 80%;
           display: grid;
-
-          i {
-            color: $color-4;
+          li{
+            color: white;
+            i {
+              color: $color-4;
+            }
           }
         }
       }
@@ -170,6 +173,7 @@
         display: grid;
 
         li {
+          color: white;
           i {
             position: absolute;
             color: $color-4;

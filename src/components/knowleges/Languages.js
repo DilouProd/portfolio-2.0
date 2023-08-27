@@ -4,32 +4,34 @@ import ProgressBar from './ProgressBar';
 class Languages extends Component {
     state = {
         languages: [
-            {id: 1, value: "JavaScript", xp : 1.8},
-            {id: 2, value: "CSS", xp : 2},
-            {id: 3, value: "PHP", xp : 0.7},
-            {id: 4, value: "Python", xp : 0.4},
+            {id: 1, value: "Vlan", xp : 1.9},
+            {id: 2, value: "DHCP Routeur", xp : 1.7},
+            {id: 3, value: "DHCP Serveur", xp : 1.8},
+            {id: 4, value: "DNS", xp : 1.8},
+            {id: 5, value: "Rouatage (RIP)", xp : 1.8},
+            {id: 6, value: "Adressage IP", xp : 1.8},
+            {id: 7, value: "Active Directory", xp : 1.8},
         ],
-        frameworks: [
-            {id: 1, value: "React", xp : 1.2},
-            {id: 2, value: "Bootstrap", xp : 1.5},
-            {id: 3, value: "Symfony", xp : 1.4},
-            {id: 4, value: "Django", xp : 0.8},
+        system: [
+            {id: 1, value: "Virtualisation de Machine", xp : 1.8},
+            {id: 2, value: "Windows", xp : 1.8},
+            {id: 3, value: "Linux (Ubuntu, Debian)", xp : 1.8},
         ]
     }
     render() {
-        let {languages, frameworks} = this.state;
+        let {languages, system} = this.state;
 
         return (
             <div className="languagesFrameworks">
                 <ProgressBar
                     languages={languages}
                     className="languagesDisplay"
-                    title="languages"
+                    title="Compétences Réseau"
                 />
-                <ProgressBar 
-                    languages={frameworks}
-                    className="frameworksDisplay"
-                    title="frameworks & bibliothèques"
+                <ProgressBar
+                    languages={system}
+                    className="skillSystem"
+                    title="Compétence Systeme"
                 />
             </div>
         );
